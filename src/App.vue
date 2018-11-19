@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+
     <Header/>
     <img alt="Vue logo" src="./assets/logo.png">
-    <Home/>
-    <Statistics/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   components: {
     Home,
     Header,
-    Statistics
+    Statistics,
   }
 }
 </script>
