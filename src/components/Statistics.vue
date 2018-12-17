@@ -14,6 +14,7 @@
     },
     data () {
       return {
+        pharmacies:null,
         datacollection: null
       }
     },
@@ -45,6 +46,11 @@
       getRandomInt () {
         return Math.floor(Math.random() * (50 - 5 + 1)) + 5
       }
+    },
+    mounted(){
+      this.axios
+        .get('http://163.172.167.185:3000/v1/pharmacies')
+        .then(response=>(this.pharmacies = response))
     }
   }
 </script>
