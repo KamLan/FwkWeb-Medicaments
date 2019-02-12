@@ -16,7 +16,9 @@ export default {
   components: {
     Home,
     Header,
-    Statistics,
+    Statistics
+  },
+  methods: {
   }
 }
 </script>

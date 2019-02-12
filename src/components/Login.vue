@@ -24,6 +24,7 @@
             login() {
                 if(this.input.user != "" && this.input.pw != "") {
                     if(this.input.user == "admin" && this.input.pw == "secret") {
+                        this.$store.commit("SET_LOG", true)
                         this.$router.push({path: "/stats"});
                     } else {
                         console.log("The username and / or password is incorrect");
